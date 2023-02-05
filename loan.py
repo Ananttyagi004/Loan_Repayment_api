@@ -1,9 +1,8 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-import warnings
-warnings.filterwarnings("ignore")
+
+
+
 from fastapi import FastAPI
 import uvicorn
 from main import request_body
@@ -38,18 +37,4 @@ model.fit(x_train,y_train)
 
 
 
-# @app.post('/predict')
-# def prediction(data :request_body):
-#     test_data=[[data.Gender,data.Married,data.Dependents,data.Education,data.Self_Employed,data.ApplicantIncome,
-#     data.CoapplicantIncome,data.LoanAmount,data.Loan_Amount_Term,data.Credit_History,data.Property_Area]]
-#     res=model.predict(test_data)[0]
-
-#     if res=='0':
-#         ans='NO'
-
-#     else:
-#         ans='YES'    
-
-
-#     return {"prediction" : ans}
 
